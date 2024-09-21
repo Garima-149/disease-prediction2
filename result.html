@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <!-- Link CSS using url_for to ensure correct path -->
+    <link rel="stylesheet" href="{{ url_for('serve_static', filename='predict.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Prediction Result</h1>
+    <p>Your predicted disease is: <strong>{{ prediction }}</strong></p>
+    <a href="/">Go Back</a>
+</body>
+</html>

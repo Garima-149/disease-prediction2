@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Baloo Bhaijaan 2", sans-serif;
+}
+body{
+    background-image: url(bgcontact.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1{
+    text-align: center;
+    padding: 4vh;
+    font-size: 6vh;
+    font-weight: 900;
+}
+.photo{
+    display: flex;
+    flex-direction: column;
+}
+.photo_main{
+    display: flex;
+    flex-direction: row;
+}
+.content{
+    padding-left: 10vh;
+    padding-right: 10vh;
+    text-align: center;
+    font-size: 3vh;
+}
+#bhavya img{
+    border-radius: 50%;
+    width: 30vh;
+    padding-left:10vh;
+    padding-right: 10vh;
+    padding-bottom: 3vh;
+}
+#dakshita img{
+    border-radius: 50%;
+    width: 30vh;
+    padding-left:10vh;
+    padding-right: 10vh;
+    padding-bottom: 3vh;
+}
+#garima img{
+    border-radius: 50%;
+    width: 30vh;
+    padding-left:10vh;
+    padding-right: 10vh;
+    padding-bottom: 3vh;
+}
+a{
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    text-decoration: underline;
+    color: blue;
+}
+#box{
+    padding: 10vh;
+}

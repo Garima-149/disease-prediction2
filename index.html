@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syntax Squad</title>
+    <link rel="stylesheet" href="{{ url_for('serve_static', filename='style.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main">
+        <div class="logo">
+            <img src="{{ url_for('serve_static', filename='logo.jpeg') }}" alt="Logo">
+        </div> 
+        <div class="navbar">
+            <nav>
+                <a href="{{ url_for('about') }}" target="_blank">ABOUT</a>
+                <a href="{{ url_for('contact_us') }}" target="_blank">CONTACT US</a>
+                <a href="{{ url_for('predict') }}" id="predict" target="_blank">PREDICT</a>        
+            </nav>
+        </div>       
+    </div>
+    <div id="background">
+        <div id="quote">
+            <h1>PREVENTION IS<br> BETTER<br>THAN CURE.</h1>
+        </div>
+    </div>
+</body>
+</html>

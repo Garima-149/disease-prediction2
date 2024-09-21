@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predict</title>
+    <!-- Link CSS using url_for -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='predict.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Information Of Symptoms</h1>
+    <p>Answer the following questions based on what you are suffering from.</p>
+    <div class="absmain">
+
+        <form class="main" action="/predict" method="POST">
+            <div>
+              <label>Itching:</label><br>
+              <input type="radio" name="itching" value="yes" required> Yes
+              <input type="radio" name="itching" value="no" required> No
+            </div>
+          
+            <div>
+              <label>Continuous Sneezing:</label><br>
+              <input type="radio" name="continuous_sneezing" value="yes" required> Yes
+              <input type="radio" name="continuous_sneezing" value="no" required> No
+            </div>
+          
+            <div>
+              <label>Joint Pain:</label><br>
+              <input type="radio" name="joint_pain" value="yes" required> Yes
+              <input type="radio" name="joint_pain" value="no" required> No
+            </div>
+          
+            <div>
+              <label>Stomach Pain:</label><br>
+              <input type="radio" name="stomach_pain" value="yes" required> Yes
+              <input type="radio" name="stomach_pain" value="no" required> No
+            </div>
+          
+            <div>
+              <label>Acidity:</label><br>
+              <input type="radio" name="acidity" value="yes" required> Yes
+              <input type="radio" name="acidity" value="no" required> No
+            </div>
+          
+            <div>
+              <label>Ulcers on Tongue:</label><br>
+              <input type="radio" name="ulcers_on_tongue" value="yes" required> Yes
+              <input type="radio" name="ulcers_on_tongue" value="no" required> No
+            </div>
+          
+            <div>
+              <label>Anxiety:</label><br>
+              <input type="radio" name="anxiety" value="yes" required> Yes
+              <input type="radio" name="anxiety" value="no" required> No
+            </div>
+          
+            <div>
+              <label>Irregular Sugar Level:</label><br>
+              <input type="radio" name="irregular_sugar_level" value="yes" required> Yes
+              <input type="radio" name="irregular_sugar_level" value="no" required> No
+            </div>
+          
+            <div>
+              <label>Cough:</label><br>
+              <input type="radio" name="cough" value="yes" required> Yes
+              <input type="radio" name="cough" value="no" required> No
+            </div>
+          
+            <div>
+              <label>Dehydration:</label><br>
+              <input type="radio" name="dehydration" value="yes" required> Yes
+              <input type="radio" name="dehydration" value="no" required> No
+            </div>
+          
+            <div>
+              <label>Headache:</label><br>
+              <input type="radio" name="headache" value="yes" required> Yes
+              <input type="radio" name="headache" value="no" required> No
+            </div>
+          
+            <div>
+              <label>Yellowish Skin:</label><br>
+              <input type="radio" name="yellowish_skin" value="yes" required> Yes
+              <input type="radio" name="yellowish_skin" value="no" required> No
+            </div>
+          
+            <div>
+              <label>Dark Urine:</label><br>
+              <input type="radio" name="dark_urine" value="yes" required> Yes
+              <input type="radio" name="dark_urine" value="no" required> No
+            </div>
+          
+            <div>
+              <label>Nausea:</label><br>
+              <input type="radio" name="nausea" value="yes" required> Yes
+              <input type="radio" name="nausea" value="no" required> No
+            </div>
+          
+            <div>
+              <label>Pain Behind the Eyes:</label><br>
+              <input type="radio" name="pain_behind_the_eyes" value="yes" required> Yes
+              <input type="radio" name="pain_behind_the_eyes" value="no" required> No
+            </div>
+          
+            <div>
+              <label>Diarrhoea:</label><br>
+              <input type="radio" name="diarrhoea" value="yes" required> Yes
+              <input type="radio" name="diarrhoea" value="no" required> No
+            </div>
+          
+            <div>
+              <label>Mild Fever:</label><br>
+              <input type="radio" name="mild_fever" value="yes" required> Yes
+              <input type="radio" name="mild_fever" value="no" required> No
+            </div>
+          
+            <div>
+              <label>Blurred and Distorted Vision:</label><br>
+              <input type="radio" name="blurred_and_distorted_vision" value="yes" required> Yes
+              <input type="radio" name="blurred_and_distorted_vision" value="no" required> No
+            </div>
+          
+            <div>
+              <label>Redness of Eyes:</label><br>
+              <input type="radio" name="redness_of_eyes" value="yes" required> Yes
+              <input type="radio" name="redness_of_eyes" value="no" required> No
+            </div>
+          
+            <div>
+              <label>Runny Nose:</label><br>
+              <input type="radio" name="runny_nose" value="yes" required> Yes
+              <input type="radio" name="runny_nose" value="no" required> No
+            </div>
+          
+            <div>
+              <label>Chest Pain:</label><br>
+              <input type="radio" name="chest_pain" value="yes" required> Yes
+              <input type="radio" name="chest_pain" value="no" required> No
+            </div>
+          
+            <div>
+              <label>Fast Heart Rate:</label><br>
+              <input type="radio" name="fast_heart_rate" value="yes" required> Yes
+              <input type="radio" name="fast_heart_rate" value="no" required> No
+            </div>
+          
+            <div>
+              <label>Bloody Stool:</label><br>
+              <input type="radio" name="bloody_stool" value="yes" required> Yes
+              <input type="radio" name="bloody_stool" value="no" required> No
+            </div>
+          
+            <div>
+              <label>Cramps:</label><br>
+              <input type="radio" name="cramps" value="yes" required> Yes
+              <input type="radio" name="cramps" value="no" required> No
+            </div>
+          
+            <div>
+              <label>Obesity:</label><br>
+              <input type="radio" name="obesity" value="yes" required> Yes
+              <input type="radio" name="obesity" value="no" required> No
+            </div>
+          
+            <div>
+              <label>Enlarged Thyroid:</label><br>
+              <input type="radio" name="enlarged_thyroid" value="yes" required> Yes
+              <input type="radio" name="enlarged_thyroid" value="no" required> No
+            </div>
+          
+            <div>
+              <label>Red Spots Over Body:</label><br>
+              <input type="radio" name="red_spots_over_body" value="yes" required> Yes
+              <input type="radio" name="red_spots_over_body" value="no" required> No
+            </div>
+          
+            <div>
+              <label>Abnormal Menstruation:</label><br>
+              <input type="radio" name="abnormal_menstruation" value="yes" required> Yes
+              <input type="radio" name="abnormal_menstruation" value="no" required> No
+            </div>
+          
+            <div>
+              <label>Receiving Blood Transfusion:</label><br>
+              <input type="radio" name="receiving_blood_transfusion" value="yes" required> Yes
+              <input type="radio" name="receiving_blood_transfusion" value="no" required> No
+            </div>
+          
+            <div>
+              <label>Receiving Unsterile Injections:</label><br>
+              <input type="radio" name="receiving_unsterile_injections" value="yes" required> Yes
+              <input type="radio" name="receiving_unsterile_injections" value="no" required> No
+            </div>
+          
+            <div>
+              <label>History of Alcohol Consumption:</label><br>
+              <input type="radio" name="history_of_alcohol_consumption" value="yes" required> Yes
+              <input type="radio" name="history_of_alcohol_consumption" value="no" required> No
+            </div>
+            <div>
+                <button type="submit">Predict Now</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
